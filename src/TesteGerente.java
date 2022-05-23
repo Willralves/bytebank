@@ -5,6 +5,7 @@ public class TesteGerente {
 		
 		Gerente gerente1 = new Gerente();
 		Funcionario funcionario1 = new Funcionario();
+		ControlaBonificacao controla = new ControlaBonificacao();
 		
 		gerente1.setNome("William");
 		gerente1.setSalario(7500.00);
@@ -27,6 +28,12 @@ public class TesteGerente {
 		
 		System.out.println(gerente1.getBonificacao());
 		System.out.println(funcionario1.getBonificacao());
+		
+		System.out.println(controla.registra(gerente1));
+		
+		
+		System.out.println(controla.registra(funcionario1));
+	
 		
 	}
 
